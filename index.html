@@ -14,10 +14,45 @@
 
 <body>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <div class="form-text">Esqueceu sua senha? <a href="#">Clique aqui</a>.</div>
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Modal -->
+
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top p-3 box-shadow">
+
     <a class="nav-brand" href="#">
       <img src="img/caravan.svg" alt="Caravan">
     </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,7 +73,7 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
@@ -49,6 +84,7 @@
 
   <section class="container-fluid">
     <div class="row bg-dark text-white align-items-center">
+
       <div class="col-lg-7 p-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -86,6 +122,7 @@
           </button>
         </div>
       </div>
+
       <div class="col-lg-5 p-4">
         <h1 class="display-4">Realize a viagem do seu sonho</h1>
         <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas.</p>
@@ -97,6 +134,7 @@
         </form>
       </div>
     </div>
+
   </section>
 
   <section class="py-5 bg-light text-center">
@@ -114,6 +152,7 @@
           <h3>Documentos</h3>
           <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla</p>
         </div>
+
         <div class="col-xl-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/passagens.svg" alt="Passagens">
@@ -121,6 +160,7 @@
           <h3>Passagens</h3>
           <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla</p>
         </div>
+
         <div class="col-xl-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/translado.svg" alt="Translado">
@@ -136,6 +176,7 @@
           <h3>Turismo</h3>
           <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla</p>
         </div>
+
         <div class="col-xl-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/bagagens.svg" alt="Bagagens">
@@ -143,6 +184,7 @@
           <h3>Bagagens</h3>
           <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla</p>
         </div>
+
         <div class="col-xl-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/praias.svg" alt="Praias">
@@ -151,6 +193,7 @@
           <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla</p>
         </div>
       </div>
+
       <a class="btn btn-primary btn-lg mt-4" href="planos.html">Comprar Plano</a>
     </div>
   </section>
@@ -165,12 +208,14 @@
   </section>
 
   <section class="container">
+
     <div class="my-5 text-center">
       <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
       <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
     </div>
+
     <div class="row justify-content-center">
-      <div class="col-6">
+      <div class="col-md-6">
 
         <div class="pergunta py-2">
           <a class="lead" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
@@ -242,6 +287,58 @@
           <a class="btn btn-primary" href="contato.html">Entre em Contato</a>
         </div>
   </section>
+
+  <footer class="bg-dark text-white">
+
+    <div class="container py-4">
+      <div class="row">
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="incricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unsty">
+            <li><a href="local.html">California</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>21 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+
+          <h4 class="h6">REDES SOCIAIS</h4>
+
+          <ul class="list-unstyled text-secondary">
+            <li class="row"><a class="btn btn-outline-secondary btn-sm mb-2" href="#" style="max-width: 140px;">Facebook</a></li>
+            <li class="row"><a class="btn btn-outline-secondary btn-sm mb-2" href="#" style="max-width: 140px;">Twitter</a></li>
+            <li class="row"><a class="btn btn-outline-secondary btn-sm mb-2" href="#" style="max-width: 140px;">Youtube</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan ©. alguns direitos reservados.</p>
+    </div>
+
+  </footer>
 
 
   <!-- Bootstrap Bundle with Popper -->
