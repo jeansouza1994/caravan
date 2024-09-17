@@ -1,5 +1,6 @@
 body {
     padding-top: 72px;
+    overflow-x: hidden;
 }
 
 .box-shadow {
@@ -17,6 +18,18 @@ body {
 
 .lead {
     text-decoration: none;
+}
+
+.lista-plano li {
+    padding: 1rem;
+}
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nquebra {
+    word-wrap: normal;
 }
 
 @media (max-width: 767px) {

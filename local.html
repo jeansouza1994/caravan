@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan - Local</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <div class="form-text">Esqueceu sua senha? <a href="#">Clique aqui</a>.</div>
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Modal -->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top p-3 box-shadow">
+
+    <a class="nav-brand" href="#">
+      <img src="img/caravan.svg" alt="Caravan">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="callapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class=" nav-item dropdown">
+          <a class="nav-link dropdown-toggle pointer active" id=" dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="local.html">California</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dublin</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="text-center">
+    <div class="container">
+      <div class="my-5">
+        <span class="h6 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
+        <h1 class="display-4 text-primary">Descubra Dublin</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="img/local/foto-1.jpg" alt="Foto 1">
+        <img class="img-fluid mb-4" src="img/local/foto-2.jpg" alt="Foto 2">
+        <img class="img-fluid mb-4" src="img/local/foto-3.jpg" alt="Foto 3">
+      </div>
+      <div class="co-md">
+        <img class="img-fluid mb-4" src="img/local/foto-4.jpg" alt="Foto 4">
+        <img class="img-fluid mb-4" src="img/local/foto-5.jpg" alt="Foto 5">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="img/local/foto-6.jpg" alt="Foto 6">
+        <img class="img-fluid mb-4" src="img/local/foto-7.jpg" alt="Foto 7">
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center container">
+
+    <div class="my-5">
+      <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
+      <h1 class="display-4 text-primary">Próximos Eventos</h1>
+    </div>
+
+    <table class="table table-hover table-responsive">
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Evento</th>
+          <th scope="col">Local</th>
+          <th scope="col">Ticket</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">23/10</th>
+          <td>Julien Baker</td>
+          <td>The Academy</td>
+          <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+        </tr>
+        <tr>
+          <th scope="row">23/10</th>
+          <td>Julien Baker</td>
+          <td>The Academy</td>
+          <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+        </tr>
+        </tr>
+        <tr>
+          <th scope="row">23/10</th>
+          <td>Julien Baker</td>
+          <td>The Academy</td>
+          <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+
+    <div class="container py-4">
+      <div class="row">
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="incricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">California</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>21 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+
+          <h4 class="h6">REDES SOCIAIS</h4>
+
+          <ul class="list-unstyled text-secondary">
+            <li class="row"><a class="btn btn-outline-secondary btn-sm mb-2" href="#" style="max-width: 140px;">Facebook</a></li>
+            <li class="row"><a class="btn btn-outline-secondary btn-sm mb-2" href="#" style="max-width: 140px;">Twitter</a></li>
+            <li class="row"><a class="btn btn-outline-secondary btn-sm mb-2" href="#" style="max-width: 140px;">Youtube</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan ©. alguns direitos reservados.</p>
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
